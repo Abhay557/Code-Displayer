@@ -1,0 +1,28 @@
+<html>
+<title>Code Displayer</title>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<center>
+<pre>
+<span class="dot1"></span> <span class="dot2"></span> <span class="dot3"></span>
+    <code>
+<font color="#e289b3">
+const<font color="#92d390"> axios<font color="#e289b3"> = </font><font color="#92d390">require</font><font color="white">("</font><font color="#eaecab">axios</font><font color="white">");</font>
+<font color="#e289b3"> const </font><font color="#92d390">getData</font><font color="#e289b3"> = async</font>(<font color="#92d390">animename</font>)<font color="#e289b3"> =></font><font color="white">{</font>
+    <font color="#e289b3">let</font><font color="#92d390"> url</font> = <font color="#eaecab">`http://www.zoroapi.ml/search?name=<font color="white">{animename}</font>`;
+    <font color="#e289b3">await <font color="#92d390">axios.</font><font color="#9cded7">get</font>(<font color="white">url</font>)
+    .<font color="#9cded7">then</font>(<font color="#e289b3">function</font><font color="92d390">(response) {
+        console</font>.<font color="9cded7">log</font><font color="white">(response.<font color="#9cded7">data</font>);
+    })
+};
+<font color="#92d390">getData</font>("<font color="#eaecab">Example</font>");  // Example-Naruto
+</font>
+</code>
+</pre>
+</center>
+</body>
+</html>
+<!---------------pink #e289b3 green #92d390 blue #9cded7 yellow #eaecab---->
